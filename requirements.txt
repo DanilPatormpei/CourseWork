@@ -5,3 +5,4 @@ iapws==1.5.2
 matplotlib==3.5.1
 sympy == 1.7.1
 click==8.0.0
+bokeh==2.4.1
