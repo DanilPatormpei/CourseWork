@@ -11,9 +11,7 @@ from bokeh.plotting import figure
 import ezdxf
 st.markdown("<h5 style='text-align: center; color: black;'>Национальный исследовательский университет «МЭИ»</h5>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
-import pythoncom
 
-pythoncom.CoInitializeEx(0)
 with col1:
     st.write(' ')
 
