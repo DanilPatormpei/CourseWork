@@ -7,3 +7,4 @@ sympy == 1.7.1
 click==8.0.0
 pyautocad==0.2.0
 ezdxf==0.17.2
+pywin32==303
