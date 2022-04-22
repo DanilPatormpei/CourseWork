@@ -1054,9 +1054,9 @@ st.pyplot(fig)
 
 
 
-#from pyautocad import Autocad, APoint
-#doc = ezdxf.new('R2010')
-#msp = doc.modelspace()
+from pyautocad import Autocad, APoint
+doc = ezdxf.new('R2010')
+msp = doc.modelspace()
 #with st.expander("Открыть чертеж в формате DWG (требуется AutoCAD любой версии)"):
 #    st.write("""
 #        Пожалуйста нажмите на галочку "Шаг 1" и подождите открытия AutoCAD, после нажмите на галочку "Шаг 2"
