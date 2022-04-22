@@ -1054,26 +1054,26 @@ st.pyplot(fig)
 
 
 
-from pyautocad import Autocad, APoint
-doc = ezdxf.new('R2010')
-msp = doc.modelspace()
-with st.expander("Открыть чертеж в формате DWG (требуется AutoCAD любой версии)"):
-    st.write("""
-        Пожалуйста нажмите на галочку "Шаг 1" и подождите открытия AutoCAD, после нажмите на галочку "Шаг 2"
-    """)
-    agree = st.checkbox('Шаг 1')
-
-    if agree:
-        st.write('')
-        acad = Autocad(create_if_not_exists=True)
-        agree2 = st.checkbox('Шаг 2')
-        print(acad.doc.Name)
-        if agree2:
-
-            for i in range(0, len(x) - 1):
-                acad.model.AddLine(APoint(x[i], y[i]), APoint(x[i + 1], y[i + 1]))
-            for i in range(0, len(x) - 1):
-                acad.model.AddLine(APoint(x[i], y2[i]), APoint(x[i + 1], y2[i + 1]))
+#from pyautocad import Autocad, APoint
+#doc = ezdxf.new('R2010')
+#msp = doc.modelspace()
+#with st.expander("Открыть чертеж в формате DWG (требуется AutoCAD любой версии)"):
+#    st.write("""
+#        Пожалуйста нажмите на галочку "Шаг 1" и подождите открытия AutoCAD, после нажмите на галочку "Шаг 2"
+#    """)
+#    agree = st.checkbox('Шаг 1')
+#
+#    if agree:
+#        st.write('')
+#        acad = Autocad(create_if_not_exists=True)
+#        agree2 = st.checkbox('Шаг 2')
+#        print(acad.doc.Name)
+#        if agree2:
+#
+#            for i in range(0, len(x) - 1):
+#                acad.model.AddLine(APoint(x[i], y[i]), APoint(x[i + 1], y[i + 1]))
+#            for i in range(0, len(x) - 1):
+#                acad.model.AddLine(APoint(x[i], y2[i]), APoint(x[i + 1], y2[i + 1]))
 
 for i in range(0,len(x)-1):
     msp.add_line((x[i],y[i]),(x[i+1],y[i+1] ))
